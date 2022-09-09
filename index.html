@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Portfolio</title>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="./style.css">
@@ -12,13 +12,12 @@
 <body>
 	<header class="header">
 		<div class="container">
-			<div class="header-container">
-				<div class="logo">
-					<a href="#">
+			<div class="header-container adaptive-menu">
+				
+					<a class="logo" href="#">
 						<img src="./assets/icons/logo.svg" alt="logo">
 					</a>
-				</div>
-				<div class="menu">
+		
 				<nav class="nav">
 					<ul class="nav-list">
 						<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
@@ -28,17 +27,36 @@
 						<li class="nav-item"><a class="nav-link"  href="#contacts">Contacts</a></li>
 				    </ul>
 				</nav>
-				<div class="lang">
-					<span class="eng">en</span>
-					<span>/</span>
-					<span class="ru">ru</span>
+				<span class="lang">
+					<a href="#">en</a> / <a href="#">ru</a>
+				</span>
+
+				 <div>
+                <svg class="moon moon-active" width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.4528 40C15.7066 40 10.315 37.8174 6.27098 33.8545C2.22701 29.8915 5.02421e-07 24.6074 5.02421e-07 18.9761C-0.00085731 15.0913 1.09674 11.2823 3.17098 7.97181C5.24521 4.66132 8.21494 1.97886 11.7505 0.222165C12.1143 0.0404498 12.5246 -0.032245 12.9302 0.0131555C13.3359 0.058556 13.7189 0.220041 14.0315 0.477451C14.344 0.734861 14.5723 1.07679 14.6878 1.46057C14.8033 1.84434 14.8009 2.25294 14.6809 2.63538C13.672 5.82896 13.5728 9.23201 14.3941 12.4768C15.2154 15.7216 16.9259 18.6847 19.3408 21.046C21.0739 22.757 23.136 24.1141 25.4078 25.0388C27.6796 25.9635 30.116 26.4374 32.576 26.433C34.4579 26.4345 36.3292 26.1578 38.1269 25.6125C38.5172 25.4948 38.9342 25.4924 39.3258 25.6056C39.7175 25.7188 40.0665 25.9425 40.3291 26.2488C40.5918 26.5552 40.7566 26.9306 40.8029 27.3282C40.8492 27.7257 40.775 28.1279 40.5895 28.4843C38.7969 31.9492 36.0597 34.8596 32.6817 36.8923C29.3036 38.9251 25.4169 40.0008 21.4528 40ZM11.6763 3.31431C8.93463 4.94908 6.66986 7.24958 5.10105 9.99327C3.53225 12.737 2.71252 15.831 2.72115 18.9761C2.72115 29.0982 11.1241 37.3333 21.4528 37.3333C24.6621 37.3418 27.8193 36.5384 30.619 35.001C33.4187 33.4636 35.7662 31.2441 37.4343 28.5573C35.8413 28.9186 34.2113 29.1007 32.5762 29.1C29.7587 29.1053 26.9682 28.5628 24.3661 27.5041C21.764 26.4453 19.4021 24.8913 17.417 22.9319C14.8382 20.4094 12.9578 17.2845 11.9533 13.8522C10.9489 10.4199 10.8536 6.79329 11.6763 3.31481V3.31431Z" />
+                    </svg>
+            </div>
+            <div>
+                <svg class="sun sun-no-active" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.5 16.8821C23.6125 16.8821 24.7001 17.212 25.6251 17.8301C26.5501 18.4481 27.2711 19.3267 27.6968 20.3545C28.1226 21.3823 28.234 22.5133 28.0169 23.6045C27.7999 24.6956 27.2641 25.6979 26.4775 26.4846C25.6908 27.2712 24.6885 27.807 23.5974 28.024C22.5062 28.241 21.3752 28.1296 20.3474 27.7039C19.3196 27.2782 18.4411 26.5572 17.823 25.6322C17.2049 24.7071 16.875 23.6196 16.875 22.5071C16.8769 21.0158 17.4701 19.5861 18.5246 18.5317C19.5791 17.4772 21.0087 16.8839 22.5 16.8821ZM22.5 14.0696C20.8312 14.0696 19.1999 14.5644 17.8124 15.4916C16.4248 16.4187 15.3434 17.7364 14.7048 19.2782C14.0662 20.8199 13.8991 22.5164 14.2246 24.1532C14.5502 25.7899 15.3538 27.2933 16.5338 28.4733C17.7138 29.6533 19.2172 30.4569 20.8539 30.7825C22.4906 31.108 24.1871 30.9409 25.7289 30.3023C27.2706 29.6637 28.5884 28.5822 29.5155 27.1947C30.4427 25.8072 30.9375 24.1759 30.9375 22.5071C30.9375 20.2693 30.0486 18.1232 28.4662 16.5409C26.8839 14.9585 24.7378 14.0696 22.5 14.0696Z" />
+                    <path d="M7.58521 9.58066L9.57364 7.59082L14.504 12.5211L12.5155 14.5096L7.58521 9.58066Z" />
+                    <path d="M2.8125 21.1008H9.84375V23.9133H2.8125V21.1008Z" />
+                    <path d="M7.58521 35.4332L12.5155 30.5029L14.504 32.4928L9.57364 37.4217L7.58521 35.4332Z" />
+                    <path d="M21.0938 35.1633H23.9062V42.1946H21.0938V35.1633Z" />
+                    <path d="M30.4973 32.4928L32.4858 30.5029L37.4161 35.4332L35.4276 37.4217L30.4973 32.4928Z" />
+                    <path d="M35.1562 21.1008H42.1875V23.9133H35.1562V21.1008Z" />
+                    <path d="M30.4973 12.5211L35.4276 7.59082L37.4161 9.58066L32.4858 14.5096L30.4973 12.5211Z" />
+                    <path d="M21.0938 2.81958H23.9062V9.85083H21.0938V2.81958Z" />
+                    </svg>
+                    
+            </div>
+
+				<div class="burger" id="burger-1">
+					<span class="line"></span>
+					<span class="line"></span>
+					<span class="line"></span>
 				</div>
-				<div class="burger">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-				</div>
+				
 			</div>
 		</div>
 	</header>
@@ -48,7 +66,7 @@
 				<div class="hero-container">
 					<div class="hero-info">
 						<h1>Alexa Rise</h1>
-						<p>
+						<p class="hero-text">
 							Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise
 						</p>
 					    <button class="btn">Hire me</button>
@@ -61,30 +79,30 @@
 				<h2 class="section-title">Skills</h2>
 				<div class="skills-items">
 					<div class="skill-item">
-						<h3>Digital Photography</h3>
-					    <p>High-quality photos in the studio and on the nature</p>
+						<h3 class="change-color">Digital Photography</h3>
+					    <p class="change-color">High-quality photos in the studio and on the nature</p>
 					</div>
 					<div class="skill-item">
-						<h3>Video Shooting</h3>
-					    <p>Capture your moments so that they always stay with you</p>
+						<h3 class="change-color">Video Shooting</h3>
+					    <p class="change-color">Capture your moments so that they always stay with you</p>
 					</div>
 					<div class="skill-item">
-						<h3>Retouch</h3>
-						<p>I strive to make photography surpass reality</p>
+						<h3 class="change-color">Retouch</h3>
+						<p class="change-color">I strive to make photography surpass reality</p>
 					</div>
 					<div class="skill-item">
-						<h3>Audio</h3>
-						<p>Professional sounds recording for video, advertising, portfolio</p>
+						<h3 class="change-color">Audio</h3>
+						<p class="change-color">Professional sounds recording for video, advertising, portfolio</p>
 					</div>
 				</div>
 			</section>
 			<section id="portfolio" class="section">
 				<h2 class="section-title">Portfolio</h2>
 				<div class="portfolio__buttons">
-					<button>Winter</button>
-					<button>Spring</button>
-					<button>Summer</button>
-					<button>Winter</button>
+					<button class="portfolio-button button-not-active winter white-button">Winter</button>
+					<button class="portfolio-button button-not-active sprint white-button">Spring</button>
+					<button class="portfolio-button button-not-active summer white-button">Summer</button>
+					<button class="portfolio-button button-not-active autimn white-button">Autimn</button>
 			    </div>
 				<div class="portfolio-items">
 					<img src="./assets/images/portfolio-img.jpg" alt="first">
@@ -98,41 +116,43 @@
 			<section id="video" class="section">
 				<h2 class="section-title">Video</h2>
 				<div class="video-player">
-					<img src="./assets/images/video-player.jpg" alt="video-player">
-					<img class="hover" src="./assets/icons/Play_hover.svg" alt="hover">
+					<img class="video-img" src="./assets/images/video-player.jpg" alt="video-player">
+					<button class="video-button">
+						<img class="hover" src="./assets/icons/Play_hover.svg" alt="hover">
+					</button>
 				</div>
 			</section>
 			<section id="price" class="section">
 				<h2 class="section-title">Price</h2>
 				<div class="price-items">
 					<div class="price-item">
-						<h3>Standard</h3>
+						<h3  class="change-color">Standard</h3>
 						<h4>500$</h4>
-						<span>One location</span><br>
-						<span>120 photos in color</span><br>
-						<span>12 photos in retouch</span><br>
-						<span>Readiness 2-3 weeks</span><br>
-						<span> Make up, visage</span><br>
+						<span  class="change-color">One location</span><br>
+						<span  class="change-color">120 photos in color</span><br>
+						<span  class="change-color">12 photos in retouch</span><br>
+						<span  class="change-color">Readiness 2-3 weeks</span><br>
+						<span  class="change-color"> Make up, visage</span><br>
 						<button class="btn">Order shooting</button>	
 					</div>
 					<div class="price-item">
-						<h3>Premium</h3>
+						<h3  class="change-color">Premium</h3>
 						<h4>700$</h4>
-						<span>One or two locations</span><br>
-						<span>200 photos in color</span><br>
-						<span>20 photos in retouch</span><br>
-						<span>Readiness 1-2 weeks </span><br>	
-						<span>Make up, visage</span><br>
+						<span  class="change-color">One or two locations</span><br>
+						<span  class="change-color">200 photos in color</span><br>
+						<span  class="change-color">20 photos in retouch</span><br>
+						<span  class="change-color">Readiness 1-2 weeks </span><br>	
+						<span  class="change-color">Make up, visage</span><br>
 						<button class="btn">Order shooting</button>
 					</div>
 					<div class="price-item">
-						<h3>Gold</h3>
+						<h3  class="change-color">Gold</h3>
 						<h4>1000$</h4>
-						<span>Three locations or more</span><br>
-						<span>300 photos in color</span><br>
-						<span>50 photos in retouch</span><br>
-						<span>Readiness 1 week </span><br>
-						<span>Make up, visage, hairstyle</span><br>
+						<span  class="change-color">Three locations or more</span><br>
+						<span  class="change-color">300 photos in color</span><br>
+						<span  class="change-color">50 photos in retouch</span><br>
+						<span  class="change-color">Readiness 1 week </span><br>
+						<span  class="change-color">Make up, visage, hairstyle</span><br>
 						<button class="btn">Order shooting</button>
 					</div>
 				</div>
@@ -190,5 +210,44 @@
 		    </div>
 		</div>
 	</footer>
+	<script src="./index.js"></script>
+
+<script>
+	
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	
+</script>
 </body>
 </html>
